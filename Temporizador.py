@@ -12,7 +12,7 @@ else:
 
 while t:
     minutos, segundos = divmod(t, 60)
-    timer = "{:02d}:{:02d}".format(minutos, segundos)
+    timer = "{:02d}:{}".format(minutos, segundos)
     print(timer, end='\r')
     time.sleep(1)
     t = t - 1
